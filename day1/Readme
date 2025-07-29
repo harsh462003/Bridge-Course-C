@@ -1,0 +1,61 @@
+# Day 1 – C Programming Bridge Course (MIT MSIS)
+
+This folder contains the foundational C programs completed on **Day 1** of the Bridge Course at **Manipal School of Information Sciences (MSIS)**.
+
+---
+
+## ✅ Topics Covered
+
+- Function implementation
+- Arithmetic operations
+- ASCII manipulation
+- Conditionals
+- Bitwise operations
+- Header and source file separation
+- Usage of `assert()` for testing
+
+---
+
+## 📁 Files Included
+
+| File Name           | Description                                      |
+|---------------------|--------------------------------------------------|
+| `main.c`            | Main driver program to test all functionalities  |
+| `day1_operation.c`  | Contains the implementation of all functions     |
+| `day1.h`            | Header file with function prototypes             |
+
+---
+
+## 🔧 Functions Implemented
+
+- `int add(int x, int y)` – Add two integers
+- `int sub(int x, int y)` – Subtract two integers
+- `int is_even(int n)` – Check if a number is even
+- `int reverse_number(int n)` – Reverse a number
+- `char convertchar(char c)` – Convert uppercase to lowercase
+- `void convert_string(char* str)` – Convert string to lowercase
+- `float area_of_circle(int r)` – Calculate area of a circle
+- `int find_number_chara(char x, char y)` – Difference in ASCII (count between characters)
+- `float ctof(int n)` – Convert Celsius to Fahrenheit
+- `int check_leap(int year)` – Check if a year is a leap year
+- `int power_n(int n)` – Calculate 2^n using bitwise shift
+- `int check_num_char(char s)` – Check if a character is a digit
+- `int random_sum()` – Generate 2 random numbers and return their sum
+
+---
+
+## 🧪 Test Strategy
+
+Some functions are tested using `assert()` in `main.c` for correctness.
+
+---
+
+## 💬 Notes
+
+- The code uses standard C conventions.
+- The structure separates logic into header (`.h`) and implementation (`.c`) files.
+- Uses ASCII logic to minimize conditionals where possible.
+
+---
+
+MIT MSIS Bridge Course – Day 1
