@@ -1,0 +1,33 @@
+# depslib dependency file v1.0
+1753765324 source:e:\backup 15.02.2024\msis\aug 2025\fast track c\batch 1\day1\main.c
+	<assert.h>
+	"day1.h"
+
+1753765340 source:e:\backup 15.02.2024\msis\aug 2025\fast track c\batch 1\day1\day1_operation.c
+	"day1.h"
+
+1753765324 e:\backup 15.02.2024\msis\aug 2025\fast track c\batch 1\day1\day1.h
+
+1753816960 source:c:\users\batma\onedrive\desktop\bridge course\day1\main.c
+	<assert.h>
+	"day1.h"
+	<string.h>
+	<math.h>
+	<time.h>
+
+1753816782 c:\users\batma\onedrive\desktop\bridge course\day1\day1.h
+
+1753816826 source:c:\users\batma\onedrive\desktop\bridge course\day1\day1_operation.c
+	"day1.h"
+	<string.h>
+	<stdlib.h>
+
+1753903703 source:c:\users\batma\onedrive\desktop\bridge course\day1\day2.c
+	"day2.h"
+	<stdio.h>
+	<assert.h>
+
+1753903570 c:\users\batma\onedrive\desktop\bridge course\day1\day2.h
+
+1753903654 source:c:\users\batma\onedrive\desktop\bridge course\day1\day2_operations.c
+
