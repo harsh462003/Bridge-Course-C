@@ -1,0 +1,97 @@
+# C Programming Solutions
+
+This repository contains solutions to various C programming problems covering basic to intermediate concepts.
+
+## Files Structure
+
+- `day2.h` - Header file with function declarations
+- `day2_operations.c` - Implementation of all functions
+- `main.c` - Main program with test cases and examples
+
+## Problems Solved
+
+### 1. Sum of Digits
+Calculate the sum of digits in a 5-digit number.
+- Example: 12345 → sum = 15
+
+### 2. Reverse Number
+Reverse the digits of a given number.
+- Example: 12345 → 54321
+
+### 3. Count Digit Occurrences
+Count how many times a specific digit appears in a number.
+
+### 4. Palindrome Check
+Check if a given number is a palindrome.
+- Example: 12321, 56788765
+
+### 5. Prime Number Generator
+Generate the first N prime numbers.
+- Example: N=5 → 2, 3, 5, 7, 11
+
+### 6. Series Sum
+Display and calculate sum of series: 1+11+111+...111 up to n terms.
+- Example: n=4 → 1+11+111+1111
+
+### 7. Armstrong Number
+Check if a number equals the sum of cubes of its digits.
+- Example: 153 = 1³ + 5³ + 3³
+
+### 8. Amicable Numbers
+Check if two numbers are amicable (sum of proper divisors of each equals the other).
+- Example: 220 and 284
+
+### 9. Basic Calculator
+Menu-driven program for sum, difference, and product of two integers.
+
+### 10. Volume Calculator
+Calculate volume of various 3D shapes:
+- Cube
+- Cuboid  
+- Sphere
+- Cylinder
+- Cone
+
+### 11. Electricity Bill Calculator
+Calculate electricity bill based on tiered pricing:
+- First 200 units: Rs 5 per unit
+- Next 100 units: Rs 7 per unit
+- Beyond 300 units: Rs 10 per unit
+
+### 12. Number Base Conversion
+Convert between binary and decimal number systems.
+
+### 13. Tribonacci Sequence
+Generate sequence where each number is sum of previous three numbers.
+- Starts with: 0, 0, 1
+
+### 14. Right Inverted Triangle
+Print a right-aligned inverted triangle pattern using stars.
+
+### 15. Triangle Pattern (Single Loop)
+Generate triangle pattern using only one loop.
+
+### 16. Two-Digit Numbers with Digit Sum 9
+Find all two-digit numbers whose digits sum to 9.
+- Example: 18, 27, 36, 45, 54, 63, 72, 81, 90
+
+## How to Compile and Run
+
+```bash
+gcc main.c day2_operations.c -o program -lm
+./program
+```
+
+Note: The `-lm` flag is required for math library functions.
+
+## Features
+
+- Modular code structure with separate header and implementation files
+- Input validation and error handling
+- Menu-driven interfaces for interactive programs
+- Mathematical calculations using custom power function
+- Geometric volume calculations
+
+## Usage
+
+Most functions can be tested by uncommenting the relevant sections in `main.c`. The current active function demonstrates finding two-digit numbers with digit sum 9.
