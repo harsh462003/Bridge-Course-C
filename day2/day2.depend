@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1753911662 source:c:\users\batma\onedrive\desktop\bridge course\day_2\day2\main.c
+	"day2.h"
+	<stdio.h>
+	<assert.h>
+
+1753911654 c:\users\batma\onedrive\desktop\bridge course\day_2\day2\day2.h
+
+1753911821 source:c:\users\batma\onedrive\desktop\bridge course\day_2\day2\day2_operations.c
+	<math.h>
+
