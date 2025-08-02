@@ -1,0 +1,154 @@
+# Day 5 - C Programming Solutions
+
+This repository contains solutions to C programming problems focusing on structures, data management, and game implementation.
+
+## Files Structure
+
+- `day5.h` - Header file with structure definitions and function declarations
+- `operations.c` - Implementation of all functions
+- `main.c` - Main program with test cases and demonstrations
+
+## Problems Solved ✅
+
+### 1. Student Management System
+Store and print student information using structures.
+
+**Structure:**
+```c
+struct _student_ {
+    int regno;
+    char name[30];
+    int age;
+    int marks;
+};
+```
+
+**Functions:**
+- `initialize2(int, char*)` - Initialize college with capacity
+- `insert_student_details(student, college)` - Add student records
+- `display_student_details(college)` - Display all students in formatted table
+
+**Features:**
+- Handles up to 30 students per college
+- Formatted output with proper alignment
+- Status tracking (INSERTED/STUDENT_FULL)
+
+### 2. Complex Number Operations
+Add, subtract, and multiply complex numbers using structures.
+
+**Structure:**
+```c
+struct _complex_number_ {
+    float real;
+    float imaginary;
+};
+```
+
+**Functions:**
+- `sum(question2, question2)` - Addition of complex numbers
+- `diff(question2, question2)` - Subtraction of complex numbers
+- `multiply(question2, question2)` - Multiplication of complex numbers
+- `display(question2)` - Formatted display of complex numbers
+
+**Mathematical Operations:**
+- Addition: (a+bi) + (c+di) = (a+c) + (b+d)i
+- Subtraction: (a+bi) - (c+di) = (a-c) + (b-d)i
+- Multiplication: (a+bi) × (c+di) = (ac-bd) + (ad+bc)i
+
+### 4. Snake and Ladder Game
+Two-player Snake and Ladder game implementation with 10×10 board.
+
+**Structure:**
+```c
+struct _game_ {
+    int position;
+    char name[20];
+};
+```
+
+**Functions:**
+- `roll_dice()` - Random dice roll (1-6)
+- `check_position(int)` - Handle snakes and ladders
+- `print_board(player, player)` - Display game board
+- `play_game()` - Main game loop
+
+**Game Features:**
+- 10×10 board (positions 1-100)
+- 6 ladders at positions: 3→22, 5→8, 11→26, 20→29, 27→56, 50→91
+- 7 snakes at positions: 17→4, 19→7, 21→9, 43→38, 62→18, 70→50, 87→24
+- Player vs Computer gameplay
+- Visual board representation
+- Win condition at position 100
+
+## Additional Implementation (Employee Management)
+
+**Structure:**
+```c
+struct _employee_ {
+    int emp_id;
+    char name[20];
+    int salary;
+    int status;
+};
+```
+
+**Functions:**
+- `initialize(int, char*)` - Initialize company
+- `insert_employee(Employee, Company)` - Add employee records
+- `display_details(Company)` - Display all employees
+- `search_details_id(Company, int)` - Search employee by ID
+- `get_details(Company, int)` - Retrieve employee information
+
+## Test Cases
+
+### Student Management:
+- Initializes college with 10 student capacity
+- Adds 10 students successfully
+- Tests overflow condition (11th student rejected)
+- Displays formatted student records
+
+### Complex Numbers:
+- Tests: (3+2i) and (1+7i)
+- Sum: (4+9i)
+- Difference: (2-5i)  
+- Product: (-11+23i)
+
+### Snake and Ladder:
+- Interactive gameplay between user and computer
+- Random dice rolls
+- Board visualization after each move
+- Automatic snake/ladder position changes
+
+## Constants Used
+
+```c
+#define INSERTED 10
+#define STUDENT_FULL 99
+#define WIN_POSITION 100
+```
+
+## How to Compile and Run
+
+```bash
+gcc main.c operations.c -o day5_program
+./day5_program
+```
+
+Note: The game uses `getch()` for user input and `srand(time(NULL))` for random number generation.
+
+## Pending Implementation ❌
+
+### 3. Shopping Cart with Discount System
+- Price and quantity input for items
+- Total calculation function
+- Discount calculation based on total amount:
+  - < Rs.1000: 5% discount
+  - Rs.1000-5000: 10% discount  
+  - > Rs.5000: 15% discount
+- Detailed receipt printing with itemized costs
+
+## Current Status
+
+- **Completed**: 3 out of 4 assigned problems
+- **Functionality**: Structure-based data management and interactive gaming
+- **Code Quality**: Well-structured with proper error handling and user interaction
