@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1754092990 source:c:\users\batma\onedrive\desktop\bridge course\day4\main.c
+	<stdio.h>
+	<stdlib.h>
+	"header.h"
+	<assert.h>
+
+1754026506 source:c:\users\batma\onedrive\desktop\bridge course\day4\day3_operations.c
+
+1754092855 c:\users\batma\onedrive\desktop\bridge course\day4\header.h
+
+1754093017 source:c:\users\batma\onedrive\desktop\bridge course\day4\day4_operations.c
+
