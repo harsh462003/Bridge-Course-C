@@ -1,54 +1,40 @@
-#include<stdio.h>
-#include"header.h"
+#include <stdio.h>
+#include <stdlib.h>
 #include<assert.h>
-#include<string.h>
+#include "day5.h"
+
 
 int main()
 {
-    clg msis;
-    msis=initialize_details(10,"MSIS");
-    assert(msis.status==CREATED);
-    
+    Array *test, *temp;
 
-    stu s;
-    s.regno=1;
-    strcpy(s.name,"Harshith");
-    s.marks=90;
-    s.age=22;
-    msis=insert_student_details(s,msis);
-    assert(msis.status==INSERTED_STUDENT);
-
-    s.regno=2;
-    strcpy(s.name,"Darshan");
-    s.marks=100;
-    s.age=22;
-    msis=insert_student_details(s,msis);
-    assert(msis.status==INSERTED_STUDENT);
-    display_student(msis);
-
-    search_student(msis,3);
-
-
-
-    printf("\n\n\n");
-    array *test,*temp;
-    test=initialize_array(5);
+    test = initialise_array(5);
+    assert(test != NULL);
     assert(test->c_size == 0);
     assert(test->t_size == 5);
     assert(test->arr != NULL);
 
-    assert(insert_data(test,1)==1);
-    assert(insert_data(test,2)==1);
-    assert(insert_data(test,3)==1);
-    assert(insert_data(test,4)==1);
-    assert(insert_data(test,5)==1);
+    assert(insert_data(test, 11) == TRANS_SUCCESS);
+    assert(insert_data(test, 20) == TRANS_SUCCESS);
+    assert(insert_data(test, 33) == TRANS_SUCCESS);
+    assert(insert_data(test, 40) == TRANS_SUCCESS);
+    assert(insert_data(test, 55) == TRANS_SUCCESS);
+    assert(test->c_size == test->t_size);
+    assert(*(test->arr + 4) == 55);
 
-    display_arr(test);
-    search_element(test,3);
+    assert(insert_data(test, 60) == ARRAY_FULL);
 
-    temp=deallocate(test);
-    assert(temp == NULL);
-    
+    assert(search(test, 11));
+    assert(search(test, 33));
+    assert(search(test, 55));
+    assert(search(test, 60) == NOT_FOUND);
 
+    temp = copy_even_elements(test);
+    assert(temp->c_size == 2);
+    assert(temp->arr[0] == 20);
+    assert(temp->arr[1] == 40);
+
+    test =deallocate(test);
+    temp = deallocate(temp);
     return 0;
 }
